@@ -1,0 +1,24 @@
+<template>
+  <a href="#" class="block w-posts p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <div class=""><img class="w-auto m-w-100" src="https://img.freepik.com/free-vector/software-code-testing-concept-illustration_114360-8114.jpg?w=2000" alt=""></div>
+    <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+      {{postsDate.title}}
+    </h5>
+    <p class="font-normal text-sm text-gray-700 dark:text-gray-400">{{postsDate.body}}</p>
+  </a>
+</template>
+
+<script setup>
+  const props = defineProps({
+    postsDate:{
+      type: Object,
+      required: true,
+      default: () => {}
+    }
+  })
+  console.log(props.postsDate)
+</script>
+
+<style scoped>
+
+</style>
