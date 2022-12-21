@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors');
 module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
@@ -17,6 +18,7 @@ module.exports = {
       'gray-dark': '#273444',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
+
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
@@ -33,7 +35,20 @@ module.exports = {
       },
       borderRadius: {
         '4xl': '2rem',
-      }
+      },
+      colors: {
+        // Colors you want to add go here
+        rose: colors.rose,
+        cyan: colors.cyan,
+        purple: colors.purple,
+        blue: colors.blue,
+        white: colors.white,
+        pink: colors.pink,
+        orange: colors.orange,
+        green: colors.green,
+        black: colors.black,
+
+      },
     },
     posts:{
       30:'33.33333333333333%'
@@ -42,5 +57,6 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+  ],
 }
