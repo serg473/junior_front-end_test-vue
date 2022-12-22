@@ -13,9 +13,6 @@
         {{ postsDate.title }}
       </h5>
       <p class="font-normal text-sm text-gray-700 dark:text-gray-400">{{ postsDate.body }}</p>
-      <p class="font-normal mt-3 text-xl text-gray-700 dark:text-gray-400 text-black-700">Likes {{
-          postsDate.reactions
-        }}</p>
     </div>
 
   <router-view></router-view>

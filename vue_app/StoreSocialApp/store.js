@@ -10,7 +10,11 @@ export const useStoreSocialApp = defineStore('SocialApp', {
         },
         likes: 0,
         postsItem:[],
-        comment:[]
+        comment:[],
+        search:{
+            searchText:''
+        }
+
     }),
     actions: {
         getPosts() {
@@ -38,6 +42,12 @@ export const useStoreSocialApp = defineStore('SocialApp', {
             axios.get(`https://dummyjson.com/posts/${id}/comments`)
                 .then(res => {
                     this.comment = res.data.comments
+                })
+        },
+        search(){
+            axios.get(`https://dummyjson.com/posts/search?q=` + this.search.searchText)
+                .then(res => {
+                    this.posts = res.data.posts
                 })
         }
 
