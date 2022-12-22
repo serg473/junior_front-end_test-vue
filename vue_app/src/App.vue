@@ -6,8 +6,9 @@
         <div class="search_add-post">
           <FormAddPost :addPost = "SocialStore.addPost" :inputValue="SocialStore.dataPost"/>
         </div>
+        <SoloPostItem  />
         <div class="relative social_posts grid grid-cols-3 gap-10">
-          <SocialAppPosts v-for="postsDate in SocialStore.posts" :key = "postsDate.id" :postsDate = "postsDate"/>
+          <SocialAppPosts v-for="postsDate in SocialStore.posts" :key = "postsDate.id" :postsDate = "postsDate" />
         </div>
       </div>
     </div>
@@ -15,6 +16,7 @@
 </template>
 
 <script setup>
+import SoloPostItem from './components/SocialAppPosts/SoloPostItem/SoloPostItem.vue'
 import SocialAppPosts from "@/components/SocialAppPosts/SocialAppPosts.vue";
 import {useStoreSocialApp} from "../StoreSocialApp/store";
 import {onMounted} from "vue";

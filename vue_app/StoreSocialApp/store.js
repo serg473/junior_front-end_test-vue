@@ -8,10 +8,10 @@ export const useStoreSocialApp = defineStore('SocialApp', {
             title: '',
             body: '',
         },
-        likes: 0
-
+        likes: 0,
+        postsItem:[],
+        comment:[]
     }),
-
     actions: {
         getPosts() {
             axios.get('https://dummyjson.com/posts').then(res => {
@@ -31,9 +31,13 @@ export const useStoreSocialApp = defineStore('SocialApp', {
             this.dataPost.body = "";
         },
         getPostId(id){
-            axios.get(`https://dummyjson.com/posts/${id}`)
+            axios.get(`https://dummyjson.com/posts/` + id)
                 .then(res => {
-                    console.log(res)
+                    this.postsItem = res.data
+                })
+            axios.get(`https://dummyjson.com/posts/${id}/comments`)
+                .then(res => {
+                    this.comment = res.data.comments
                 })
         }
 
