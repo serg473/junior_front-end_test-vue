@@ -21,21 +21,8 @@
       </section>
     </div>
   </div>
-  <t-modal
-      header="Title of the modal"
-  >
-    Content of the modal.
-    <template v-slot:footer>
-      <div class="flex justify-between">
-        <t-button type="button">
-          Cancel
-        </t-button>
-        <t-button type="button">
-          Ok
-        </t-button>
-      </div>
-    </template>
-  </t-modal>
+  <button @click = "SocialStore.reqComments = false"
+      class="ml-30 mb-35 inline-block px-6 py-2.5 bg-purple-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out">Close single post </button>
 </template>
 
 <script setup>

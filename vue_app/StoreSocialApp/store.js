@@ -8,11 +8,13 @@ export const useStoreSocialApp = defineStore('SocialApp', {
             title: '',
             body: '',
         },
+        reqPost: false,
+        reqComments: false,
         likes: 0,
-        postsItem:[],
-        comment:[],
-        search:{
-            searchText:''
+        postsItem: [],
+        comment: [],
+        search: {
+            searchText: ''
         }
 
     }),
@@ -29,12 +31,12 @@ export const useStoreSocialApp = defineStore('SocialApp', {
                 title: this.dataPost.title,
                 body: this.dataPost.body
             }).then(response => {
-                    this.posts.unshift(response.data)
-                })
+                this.posts.unshift(response.data)
+            })
             this.dataPost.title = "";
             this.dataPost.body = "";
         },
-        getPostId(id){
+        getPostId(id) {
             axios.get(`https://dummyjson.com/posts/` + id)
                 .then(res => {
                     this.postsItem = res.data
@@ -44,12 +46,13 @@ export const useStoreSocialApp = defineStore('SocialApp', {
                     this.comment = res.data.comments
                 })
         },
-        search(){
+        search() {
             axios.get(`https://dummyjson.com/posts/search?q=` + this.search.searchText)
                 .then(res => {
                     this.posts = res.data.posts
+                    this.search.searchText = ''
                 })
-        }
+        },
 
     },
 })

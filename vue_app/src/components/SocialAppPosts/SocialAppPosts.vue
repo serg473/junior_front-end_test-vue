@@ -1,5 +1,5 @@
 <template>
-    <div @click="SocialStore.getPostId(postsDate.id)" class="block cursor-pointer w-posts p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <div @click="SocialStore.getPostId(postsDate.id), SocialStore.reqComments = true"  class="block cursor-pointer w-posts p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
       <div class=""><img class="w-auto m-w-100"
                          src="https://img.freepik.com/free-vector/software-code-testing-concept-illustration_114360-8114.jpg?w=2000"
                          alt=""></div>
