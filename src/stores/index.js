@@ -14,7 +14,7 @@ export const useStoreSocialApp = defineStore('SocialApp', {
         postsItem: [],
         comment: [],
         search: {
-            searchText: ''
+            searchText: '111'
         }
 
     }),

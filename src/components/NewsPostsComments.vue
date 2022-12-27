@@ -7,9 +7,7 @@
             src="https://flowbite.com/docs/images/people/profile-picture-4.jpg"
             alt="Helene Engels">{{comment.user.username}}</p>
         <p class="text-sm text-gray-600 dark:text-gray-400">
-          <time pubdate datetime="2022-06-23"
-                title="June 23rd, 2022">Jun. 23, 2022
-          </time>
+          <div>Jun. 23, 2022</div>
         </p>
       </div>
     </footer>

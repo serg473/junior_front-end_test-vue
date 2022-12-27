@@ -9,8 +9,7 @@
         </div>
 
         <div class="form_add_post">
-          <button type="button"
-                  class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+          <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                   @click="SocialStore.reqPost = !SocialStore.reqPost">Show Form Add Post
           </button>
           <div v-if="SocialStore.reqPost" class="search_add-post">
@@ -30,7 +29,7 @@
 import SearchPosts from "@/components/SearchPost.vue";
 import SoloPostItem from './components/NewsPostsSingle.vue'
 import SocialAppPosts from "@/components/NewsPosts.vue";
-import {useStoreSocialApp} from "./stores";
+import {useStoreSocialApp} from "../src/stores/index";
 import {onMounted} from "vue";
 import FormAddPost from "@/components/AddPostForm.vue";
 
