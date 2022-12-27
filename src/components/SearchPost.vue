@@ -27,7 +27,7 @@
 </template>
 
 <script setup>
-import {useStoreSocialApp} from "../store/store";
+import {useStoreSocialApp} from "../stores";
 
 const SearchAPI = useStoreSocialApp();
 

@@ -30,7 +30,7 @@
 import SearchPosts from "@/components/SearchPost.vue";
 import SoloPostItem from './components/NewsPostsSingle.vue'
 import SocialAppPosts from "@/components/NewsPosts.vue";
-import {useStoreSocialApp} from "../src/store/store";
+import {useStoreSocialApp} from "./stores";
 import {onMounted} from "vue";
 import FormAddPost from "@/components/AddPostForm.vue";
 
