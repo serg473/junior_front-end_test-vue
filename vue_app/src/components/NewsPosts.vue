@@ -14,12 +14,10 @@
       </h5>
       <p class="font-normal text-sm text-gray-700 dark:text-gray-400">{{ postsDate.body }}</p>
     </div>
-
-  <router-view></router-view>
 </template>
 
 <script setup>
-import {useStoreSocialApp} from "../../../StoreSocialApp/store";
+import {useStoreSocialApp} from "../store/store";
 const SocialStore = useStoreSocialApp();
 const props = defineProps({
   postsDate: {

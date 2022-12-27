@@ -27,12 +27,12 @@
 </template>
 
 <script setup>
-import SearchPosts from "@/components/SearchPosts/SearchPosts.vue";
-import SoloPostItem from './components/SocialAppPosts/SoloPostItem/SoloPostItem.vue'
-import SocialAppPosts from "@/components/SocialAppPosts/SocialAppPosts.vue";
-import {useStoreSocialApp} from "../StoreSocialApp/store";
+import SearchPosts from "@/components/SearchPost.vue";
+import SoloPostItem from './components/NewsPostsSingle.vue'
+import SocialAppPosts from "@/components/NewsPosts.vue";
+import {useStoreSocialApp} from "../src/store/store";
 import {onMounted} from "vue";
-import FormAddPost from "@/components/FormAddPost/FormAddPost.vue";
+import FormAddPost from "@/components/AddPostForm.vue";
 
 const SocialStore = useStoreSocialApp();
 onMounted(() => {

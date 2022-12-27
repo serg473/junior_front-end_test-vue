@@ -26,8 +26,8 @@
 </template>
 
 <script setup>
-import {useStoreSocialApp} from "../../../../StoreSocialApp/store";
-import Comments from "./Comments/Comments.vue"
+import {useStoreSocialApp} from "../store/store";
+import Comments from "./NewsPostsComments.vue"
 
 const SocialStore = useStoreSocialApp();
 
