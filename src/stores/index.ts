@@ -37,7 +37,7 @@ export const useStoreSocialApp = defineStore('SocialApp', {
             this.dataPost.title = "";
             this.dataPost.body = "";
         },
-        getPostId(id) {
+        getPostId(id:number) {
             axios.get(`https://dummyjson.com/posts/` + id)
                 .then(res => {
                     this.postsItem = res.data

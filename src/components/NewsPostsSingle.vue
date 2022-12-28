@@ -22,7 +22,7 @@
   <AppButtonClose @click="SocialStore.reqComments = false">Close single post</AppButtonClose>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import {useStoreSocialApp} from "../stores";
 import Comments from "./NewsPostsComments.vue"
 import AppButtonClose from "@/components/AppButtonClose.vue";

@@ -15,7 +15,7 @@
   </article>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 const props = defineProps({
   comment : {
     type: Object,

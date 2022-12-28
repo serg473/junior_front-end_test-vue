@@ -17,7 +17,7 @@
   </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import {useStoreSocialApp} from "../stores";
 import AppTags from "@/components/AppTags.vue";
 const SocialStore = useStoreSocialApp();

@@ -24,11 +24,11 @@
   </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import SearchPosts from "@/components/SearchPost.vue";
 import SoloPostItem from './components/NewsPostsSingle.vue'
 import SocialAppPosts from "@/components/NewsPosts.vue";
-import {useStoreSocialApp} from "../src/stores/index";
+import {useStoreSocialApp} from "./stores";
 import {onMounted} from "vue";
 import FormAddPost from "@/components/AddPostForm.vue";
 import AppButton from "@/components/AppButton.vue";

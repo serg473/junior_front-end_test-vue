@@ -13,7 +13,7 @@
 
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import SearchInput from "@/components/SearchInput.vue";
 </script>
 

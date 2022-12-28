@@ -26,7 +26,7 @@
   </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import {useStoreSocialApp} from "../stores";
 import AppButton from "@/components/AppButton.vue";
 const SocialStore = useStoreSocialApp();
