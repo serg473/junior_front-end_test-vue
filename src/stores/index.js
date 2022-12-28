@@ -4,7 +4,7 @@ import axios from "axios";
 export const useStoreSocialApp = defineStore('SocialApp', {
     state: () => ({
         posts: [],
-        loader:false,
+        loader: false,
         dataPost: {
             title: '',
             body: '',
@@ -47,14 +47,18 @@ export const useStoreSocialApp = defineStore('SocialApp', {
                     this.comment = res.data.comments
                 })
         },
-  search() {
-           axios.get(`https://dummyjson.com/posts/search?q=` + this.search.searchText)
+        search() {
+            axios.get(`https://dummyjson.com/posts/search?q=` + this.search.searchText)
                 .then(res => {
                     console.log(res.data)
                     this.posts = res.data.posts
                     this.search.searchText = ''
                 })
         },
+        searchQuery(event) {
+            this.search.searchText = event.target.value;
+            this.search()
+        },
 
-    },
+    }
 })
