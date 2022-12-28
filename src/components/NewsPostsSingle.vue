@@ -2,9 +2,9 @@
   <div class="single-post ">
     <h2 class="single-post_title title">{{ SocialStore.postsItem.title }}</h2>
     <div class="single-post_cont-tags ">
-          <span v-for="tags in  SocialStore.postsItem.tags" class="single-post__tags tags ">
+      <AppTags v-for="tags in  SocialStore.postsItem.tags">
         {{ tags }}
-      </span>
+      </AppTags>
     </div>
 
     <p class="single-post__body ">{{ SocialStore.postsItem.body }}</p>
@@ -19,22 +19,19 @@
       </section>
     </div>
   </div>
-  <button @click = "SocialStore.reqComments = false"
-      class="single-post__close close">Close single post </button>
+  <AppButtonClose @click="SocialStore.reqComments = false">Close single post</AppButtonClose>
 </template>
 
 <script setup>
 import {useStoreSocialApp} from "../stores";
 import Comments from "./NewsPostsComments.vue"
+import AppButtonClose from "@/components/AppButtonClose.vue";
+import AppTags from "@/components/AppTags.vue";
 
 const SocialStore = useStoreSocialApp();
 
 </script>
 
 <style scoped>
-.single-post {
-  width: 100%;
-  padding: 30px;
-  border-radius: 20px;
-}
+
 </style>

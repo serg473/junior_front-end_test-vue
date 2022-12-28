@@ -8,9 +8,9 @@
           <SoloPostItem/>
         </div>
         <div class="social-app__form-add-post form_add_post">
-          <button type="button" class="social-app__show-post show-post"
-                  @click="SocialStore.reqPost = !SocialStore.reqPost">Show Form Add Post
-          </button>
+         <AppButton @click="SocialStore.reqPost = !SocialStore.reqPost">
+          Show Form Add Post
+          </AppButton>
           <div v-if="SocialStore.reqPost" class="social-app__search-add-post search-add-post">
             <FormAddPost :addPost="SocialStore.addPost" :inputValue="SocialStore.dataPost"/>
           </div>
@@ -31,6 +31,7 @@ import SocialAppPosts from "@/components/NewsPosts.vue";
 import {useStoreSocialApp} from "../src/stores/index";
 import {onMounted} from "vue";
 import FormAddPost from "@/components/AddPostForm.vue";
+import AppButton from "@/components/AppButton.vue";
 
 const SocialStore = useStoreSocialApp();
 onMounted(() => {
@@ -39,5 +40,4 @@ onMounted(() => {
 })
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

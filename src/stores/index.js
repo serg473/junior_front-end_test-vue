@@ -47,7 +47,7 @@ export const useStoreSocialApp = defineStore('SocialApp', {
                     this.comment = res.data.comments
                 })
         },
-   search() {
+  search() {
            axios.get(`https://dummyjson.com/posts/search?q=` + this.search.searchText)
                 .then(res => {
                     console.log(res.data)

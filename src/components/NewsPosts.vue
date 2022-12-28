@@ -6,10 +6,9 @@
                        src="https://img.freepik.com/free-vector/software-code-testing-concept-illustration_114360-8114.jpg?w=2000"
                        alt=""></div>
     <div class="news-post__tags tags">
-      <span v-for="tags in postsDate.tags"
-            class="news-post__tags-item tags-item  ">
+      <AppTags v-for="tags in postsDate.tags">
         {{ tags }}
-      </span>
+      </AppTags>
     </div>
     <h5 class="news-post__title title ">
       {{ postsDate.title }}
@@ -20,8 +19,9 @@
 
 <script setup>
 import {useStoreSocialApp} from "../stores";
-
+import AppTags from "@/components/AppTags.vue";
 const SocialStore = useStoreSocialApp();
+
 const props = defineProps({
   postsDate: {
     type: Object,

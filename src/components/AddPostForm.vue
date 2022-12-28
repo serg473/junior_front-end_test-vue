@@ -19,8 +19,9 @@
         </div>
       </div>
       <div class="form-post__add-container">
-        <button @click="SocialStore.addPost()" type="button"  class="form-post__add-post add-post ">Add Post
-        </button>
+        <AppButton @click="SocialStore.addPost()">
+          Add Post
+        </AppButton>
       </div>
     </form>
   </div>
@@ -28,6 +29,7 @@
 
 <script setup>
 import {useStoreSocialApp} from "../stores";
+import AppButton from "@/components/AppButton.vue";
 const SocialStore = useStoreSocialApp();
 const props = defineProps({
   inputValue: {
@@ -41,6 +43,4 @@ const props = defineProps({
 })
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

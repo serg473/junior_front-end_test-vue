@@ -1,6 +1,6 @@
 /*Single-Post*/
 .single-post{
-    @apply mb-10
+    @apply mb-10 w-auto p-12 rounded-2xl
 }
 .single-post_title{
     @apply text-4xl inline-block font-extrabold
@@ -9,7 +9,7 @@
     @apply mt-15 mr-15
 }
 .single-post__tags{
-    @apply mt-5 text-xs font-semibold mr-2 px-1.5 py-0.5 rounded dark:bg-blue-500 dark:text-blue-800 inline-block
+    @apply mt-5 text-xs font-semibold mr-2 px-1.5 py-0.5 rounded dark:bg-blue-500 dark:text-blue-100 inline-block
 }
 .single-post__body{
     @apply my-4 text-lg text-gray-500
