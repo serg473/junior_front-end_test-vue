@@ -1,0 +1,22 @@
+/*Comments*/
+.comments{
+    @apply p-6 text-base bg-white border-t border-gray-200 dark:border-gray-700
+}
+.comments__container{
+    @apply flex justify-between items-center mb-2
+}
+.comments__username-body{
+    @apply flex items-center
+}
+.comments__username{
+    @apply inline-flex items-center mr-3 text-sm text-gray-900 dark:text-black
+}
+.comments__images{
+    @apply mr-2 w-6 h-6 rounded-full
+}
+.comments__date{
+    @apply text-sm text-gray-600 dark:text-gray-400
+}
+.comments_body{
+    @apply text-gray-500 dark:text-gray-400
+}

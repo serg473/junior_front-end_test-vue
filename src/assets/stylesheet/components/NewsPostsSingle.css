@@ -1,0 +1,31 @@
+/*Single-Post*/
+.single-post{
+    @apply mb-10
+}
+.single-post_title{
+    @apply text-4xl inline-block font-extrabold
+}
+.single-post_cont-tags{
+    @apply mt-15 mr-15
+}
+.single-post__tags{
+    @apply mt-5 text-xs font-semibold mr-2 px-1.5 py-0.5 rounded dark:bg-blue-500 dark:text-blue-800 inline-block
+}
+.single-post__body{
+    @apply my-4 text-lg text-gray-500
+}
+.single-post__comments-title{
+    @apply text-4xl ml-5 inline-block font-extrabold
+}
+.single-post__comments-post{
+    @apply ml-5
+}
+.single-post__section{
+    @apply bg-white py-8 lg:py-16
+}
+.single-post__block-comments{
+    @apply max-w-2xl px-4
+}
+.single-post__close{
+    @apply  ml-30 mb-35 inline-block px-6 py-2.5 bg-purple-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out
+}

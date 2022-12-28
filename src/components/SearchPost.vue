@@ -1,12 +1,10 @@
 <template>
   <div class="search">
-    <h2 class="search_title title mb-30 text-center text-4xl font-extrabold black ">Search Post</h2>
-    <div class="search_group-block flex justify-center">
+    <h2 class="search_title title ">Search Post</h2>
+    <div class="search_group-block ">
       <div class="search_container mb-3 xl:w-96">
-        <div class="search__input-group relative flex items-stretch w-full mb-4">
-          <input @change="SearchAPI.search()" v-model="search.searchText" type="text"
-                 class="search__search-post search-post form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                 placeholder="Search">
+        <div class="search__input-group ">
+          <input @change="SearchAPI.search()" v-model="search.searchText" type="search" class="search__search-post search-post" placeholder="Search">
         </div>
       </div>
     </div>

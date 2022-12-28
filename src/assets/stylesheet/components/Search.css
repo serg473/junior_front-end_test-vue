@@ -1,0 +1,20 @@
+/*Search*/
+.search_group-block{
+    @apply flex justify-center
+}
+.search_title{
+    @apply mb-30 text-center text-4xl font-extrabold
+}
+.search_container{
+    @apply mb-3 xl:w-96
+}
+.search__input-group{
+    @apply relative flex items-stretch w-full mb-4
+}
+.search__search-post{
+    width: 600px;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+}

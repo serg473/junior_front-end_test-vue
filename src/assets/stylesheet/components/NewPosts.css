@@ -1,0 +1,17 @@
+/*Post*/
+.news-post{
+    @apply block cursor-pointer p-6 bg-white border border-gray-200 rounded-lg shadow-md  dark:border-gray-700
+}
+.news-post__images{
+    @apply w-auto
+}
+
+.news-post__tags-item{
+    @apply mt-2 text-xs font-semibold mr-2 px-1.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800
+}
+.news-post__title{
+    @apply mb-2 mt-2.5 text-xl font-bold tracking-tight text-gray-900 dark:text-black
+}
+.news-post__body-post{
+    @apply font-normal text-sm text-gray-700 dark:text-gray-400
+}

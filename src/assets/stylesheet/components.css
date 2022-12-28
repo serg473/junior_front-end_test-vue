@@ -1,0 +1,13 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "./components/NewsPostsSingle.css";
+@import "./components/AddPostForm.css";
+@import "./components/NewPosts.css";
+@import "./components/Search.css";
+@import "./components/Comments.css";
+@import "./components/Common.css";
+
+@import "tailwindcss/utilities";
+

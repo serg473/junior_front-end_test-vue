@@ -24,7 +24,6 @@ module.exports = {
       'gray-dark': '#273444',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
-
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
@@ -53,8 +52,12 @@ module.exports = {
         orange: colors.orange,
         green: colors.green,
         black: colors.black,
-
+        gray: colors.gray
       },
+      border: ['focus'],
+      bg:{
+        'blue': '#1fb6ff'
+      }
     },
     posts:{
       30:'33.33333333333333%'
@@ -64,5 +67,6 @@ module.exports = {
     extend: {},
   },
   plugins: [
+
   ],
 }

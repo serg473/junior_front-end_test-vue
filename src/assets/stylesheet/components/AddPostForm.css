@@ -1,0 +1,37 @@
+/*Add-Form*/
+.form-post{
+    @apply w-auto mt-35
+}
+.form-post__form{
+    @apply w-full max-w-lg
+}
+.form-post__container{
+    @apply flex flex-wrap -mx-3 mb-6
+}
+.form-post__label-title{
+    @apply w-full px-3
+}
+.form-post__title{
+    @apply block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2
+}
+.form-post__input-title{
+    @apply appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500
+}
+.form-post__body{
+    @apply flex flex-wrap -mx-3 mb-6 ml-15
+}
+.form-post__label-body{
+    @apply w-full pr-3
+}
+.form-post__body{
+    @apply block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 ml-0
+}
+.form-post__textarea{
+    @apply appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500
+}
+.form-post__add-container{
+    @apply inline-block space-x-2 w-auto mb-30
+}
+.form-post__add-post{
+    @apply inline-block w-auto px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out
+}
