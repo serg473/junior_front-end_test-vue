@@ -3,8 +3,8 @@
        class="news-post ">
     <div class="news-post__preview">
       <img  class="news-post__images images "
-                       src="https://img.freepik.com/free-vector/software-code-testing-concept-illustration_114360-8114.jpg?w=2000"
-                       alt=""></div>
+            src="https://img.freepik.com/free-vector/software-code-testing-concept-illustration_114360-8114.jpg?w=2000"
+            alt=""></div>
     <div class="news-post__tags tags">
       <AppTags v-for="tags in postsDate.tags">
         {{ tags }}
@@ -17,7 +17,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 import {useStoreSocialApp} from "../stores";
 import AppTags from "@/components/AppTags.vue";
 const SocialStore = useStoreSocialApp();

@@ -1,33 +1,41 @@
 import {defineStore} from "pinia";
-import axios from "axios";
-interface State{
-    readonly id:string,
-    loader:false,
-    dataPost:{
-        title:string,
-        body:string,
-    }
-    reqPost:boolean,
-    reqComments: boolean,
-    likes:number,
+import axios, {post} from "axios";
 
+
+interface  SocialState {
+    posts: Array<any>,
+    loader: boolean,
+    dataPost: {
+        title: string | number,
+        body: string | number,
+    },
+    likes: number,
+    reqPost: boolean,
+    reqComments: boolean,
+    postsItem: Array<any>,
+    comment: Array<any>,
+    search: {
+        searchText:string | number
+    }
 }
-export const useStoreSocialApp = defineStore('SocialApp', {
-    state: () => ({
+export const useStoreSocialApp = defineStore({
+    id: 'SocialApp',
+    state: (): SocialState =>({
         posts: [],
         loader: false,
         dataPost: {
             title: '',
             body: '',
         },
+        likes: 0,
         reqPost: false,
         reqComments: false,
-        likes: 0,
         postsItem: [],
         comment: [],
         search: {
-            searchText: ''
+            searchText:''
         }
+
 
     }),
     actions: {
@@ -56,6 +64,7 @@ export const useStoreSocialApp = defineStore('SocialApp', {
             axios.get(`https://dummyjson.com/posts/${id}/comments`)
                 .then(res => {
                     this.comment = res.data.comments
+
                 })
         },
         search() {

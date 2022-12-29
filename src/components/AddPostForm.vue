@@ -26,7 +26,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 import {useStoreSocialApp} from "../stores";
 import AppButton from "@/components/AppButton.vue";
 const SocialStore = useStoreSocialApp();
@@ -40,6 +40,7 @@ const props = defineProps({
     required: true
   }
 })
+
 
 </script>
 

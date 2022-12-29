@@ -7,7 +7,7 @@
             src="https://flowbite.com/docs/images/people/profile-picture-4.jpg"
             alt="Helene Engels">{{comment.user.username}}</p>
         <p class="comments__date date">
-          <div class = "date">Jun. 23, 2022</div>
+        <div class = "date">Jun. 23, 2022</div>
         </p>
       </div>
     </footer>
@@ -15,7 +15,7 @@
   </article>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 const props = defineProps({
   comment : {
     type: Object,

@@ -8,8 +8,8 @@
           <SoloPostItem/>
         </div>
         <div class="social-app__form-add-post form_add_post">
-         <AppButton @click="SocialStore.reqPost = !SocialStore.reqPost">
-          Show Form Add Post
+          <AppButton @click="SocialStore.reqPost = !SocialStore.reqPost">
+            Show Form Add Post
           </AppButton>
           <div v-if="SocialStore.reqPost" class="social-app__search-add-post search-add-post">
             <FormAddPost :addPost="SocialStore.addPost" :inputValue="SocialStore.dataPost"/>
