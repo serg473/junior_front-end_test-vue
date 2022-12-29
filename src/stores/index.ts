@@ -1,6 +1,17 @@
 import {defineStore} from "pinia";
 import axios from "axios";
+interface State{
+    readonly id:string,
+    loader:false,
+    dataPost:{
+        title:string,
+        body:string,
+    }
+    reqPost:boolean,
+    reqComments: boolean,
+    likes:number,
 
+}
 export const useStoreSocialApp = defineStore('SocialApp', {
     state: () => ({
         posts: [],
